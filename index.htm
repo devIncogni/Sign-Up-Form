@@ -23,9 +23,11 @@
 
         </div>
     </div>
+
+
     <div id="formDiv">
         <div id="heading">
-            <h2>Welcome to The Incognito Devs</h2>
+            <h1>Welcome to The Incognito Devs</h1>
             <p>The most elite club of Web Developers.</p>
         </div>
         <form action="">
@@ -34,25 +36,34 @@
                     <h2>Sign Up!</h2>
 
                     <li>
-                        <label for="firstName">First Name</label>
-                        <input type="text" name="firstName" id="firstName">
-
-                        <label for="lastName">Last Name</label>
-                        <input type="text" name="lastName" id="lastName">
+                        <div>
+                            <label for="firstName">First Name*</label>
+                            <input type="text" name="firstName" id="firstName" required>
+                        </div>
+                        <div>
+                            <label for="lastName">Last Name*</label>
+                            <input type="text" name="lastName" id="lastName" required>
+                        </div>
                     </li>
                     <li>
-                        <label for="mail">Email</label>
-                        <input type="email" name="mail" id="mail">
-
-                        <label for="phone">Phone Number</label>
-                        <input type="number" name="phone" id="phone">
+                        <div>
+                            <label for="mail">Email*</label>
+                            <input type="email" name="mail" id="mail" required>
+                        </div>
+                        <div>
+                            <label for="phone">Phone Number*</label>
+                            <input type="number" name="phone" id="phone" required>
+                        </div>
                     </li>
                     <li>
-                        <label for="password">Password</label>
-                        <input type="password" name="password" id="password">
-
-                        <label for="cnfPassword">Confirm Password</label>
-                        <input type="password" name="cnfPassword" id="cnfPassword">
+                        <div>
+                            <label for="password">Password*</label>
+                            <input type="password" name="password" id="password" required>
+                        </div>
+                        <div>
+                            <label for="cnfPassword">Confirm Password*</label>
+                            <input type="password" name="cnfPassword" id="cnfPassword" required>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -60,7 +71,7 @@
             <div>
                 <button type="submit">Create Account</button>
 
-                <p>Already have an account? <a href="#">Sign in</a></p>
+                <p>Already have an account? <a id="signIn" href="#">Sign in</a></p>
             </div>
 
         </form>
