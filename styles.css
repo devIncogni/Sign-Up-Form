@@ -111,6 +111,10 @@ form {
     flex: auto;
 }
 
+#heading > h1 {
+    font-size: 3em
+}
+
 /* #endregion formDiv styling */
 
 /* #region form styling */
