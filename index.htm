@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to The Incognito Devs</title>
     <link rel="stylesheet" href="./styles.css">
 </head>
+
 <body>
     <div id="bgDiv">
         <div id="logo">
@@ -13,7 +15,12 @@
             <h1>devIncogni</h1>
         </div>
         <div id="credit">
-            <p>Photo by XYZ</p>
+            <p>Photo by <a
+                    href="https://unsplash.com/@umby?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Umberto</a>
+                on <a
+                    href="https://unsplash.com/photos/green-bokeh-lights-FewHpO4VC9Y?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+            </p>
+
         </div>
     </div>
     <div id="formDiv">
@@ -22,26 +29,42 @@
             <p>The most elite club of Web Developers.</p>
         </div>
         <form action="">
-            <h2>Sign Up!</h2>
-            <ul>
-                <li>
-                    <label for="firstName">First Name<input type="text" name="firstName" id="firstName"></label>
-                    <label for="lastName">Last Name<input type="text" name="lastName" id="lastName"></label>                    
-                </li>
-                <li>
-                    <label for="mail">Email<input type="email" name="mail" id="mail"></label>
-                    <label for="phone">Phone Number<input type="number" name="phone" id="phone"></label>
-                </li>
-                <li>
-                    <label for="password">Password<input type="password" name="password" id="password"></label>
-                    <label for="cnfPassword">Confirm Password<input type="password" name="cnfPassword" id="cnfPassword"></label>
-                </li>
-            </ul>
+            <div>
+                <ul>
+                    <h2>Sign Up!</h2>
 
-            <button type="submit">Create Account</button>
+                    <li>
+                        <label for="firstName">First Name</label>
+                        <input type="text" name="firstName" id="firstName">
 
-            <p>Already have an account? <a href="#">Sign in</a></p>
+                        <label for="lastName">Last Name</label>
+                        <input type="text" name="lastName" id="lastName">
+                    </li>
+                    <li>
+                        <label for="mail">Email</label>
+                        <input type="email" name="mail" id="mail">
+
+                        <label for="phone">Phone Number</label>
+                        <input type="number" name="phone" id="phone">
+                    </li>
+                    <li>
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password">
+
+                        <label for="cnfPassword">Confirm Password</label>
+                        <input type="password" name="cnfPassword" id="cnfPassword">
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <button type="submit">Create Account</button>
+
+                <p>Already have an account? <a href="#">Sign in</a></p>
+            </div>
+
         </form>
     </div>
 </body>
+
 </html>
